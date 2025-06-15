@@ -80,7 +80,11 @@ export function RoutineComponentCard() {
               <FormItem>
                 <FormLabel>Nome</FormLabel>
                 <FormControl>
-                  <Input {...field} placeholder="Nome do componente" />
+                  <Input
+                    disabled={isSubmitting}
+                    {...field}
+                    placeholder="Nome do componente"
+                  />
                 </FormControl>
                 <FormMessage />
               </FormItem>
